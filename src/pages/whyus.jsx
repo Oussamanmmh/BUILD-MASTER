@@ -1,8 +1,7 @@
-import background from '../assets/1.png'
 export default function WhyUs(){
     return(
         <>
-            <div className="  px-10 space-y-20 py-20 text-white relative whyus" style={{backgroundImage:`url(${background})`,backgroundSize:'cover',backgroundAttachment:"fixed"} }>
+            <div className="  px-10 space-y-20 py-20 text-white relative whyus" style={{backgroundImage:`url('https://res.cloudinary.com/dlzc4m2xu/image/upload/v1726935791/build-master/1_scwdag.png')`,backgroundSize:'cover',backgroundAttachment:"fixed"} }>
                     <div className='absolute inset-0 bg-black opacity-50 z-0'></div>
                     <h1 className="text-5xl font-bold font-oswald text-center relative  ">
                             Why Chooose Us for your next Projects?

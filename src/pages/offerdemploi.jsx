@@ -1,4 +1,3 @@
-import smallback from '../assets/smallback.png'
 import background from '../assets/svg/background.svg'
 
 import { motion } from 'framer-motion'
@@ -33,7 +32,7 @@ export default function OfferDEmploi() {
                 </div>
                 
             </div>
-            <div className=" rounded-xl text-white py-10 px-8 flex  flex-col md:flex-row items-center gap-2 text-pretty -mt-20" style={{backgroundImage:`url(${smallback})`, backgroundPosition:'center' , backgroundSize:'cover'}}>
+            <div className=" rounded-xl text-white py-10 px-8 flex  flex-col md:flex-row items-center gap-2 text-pretty -mt-20" style={{backgroundImage:`url('https://res.cloudinary.com/dlzc4m2xu/image/upload/v1726936528/build-master/smallback_jvzzxs.png')`, backgroundPosition:'center' , backgroundSize:'cover'}}>
                <div>
                     <p className="text-xl">Receive our monthly Canam360 newsletter</p>
                     <h1 className="font-bold text-4xl font-oswald">Subscribe to our newsletter</h1>

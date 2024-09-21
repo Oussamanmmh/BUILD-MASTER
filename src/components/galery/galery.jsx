@@ -36,7 +36,9 @@ export default function Galery() {
             <Arrow direction="next" onClick={handleNext} />
             <Arrow direction="prev" onClick={handlePrev} />
             <Points currentPage={currentPage} setCurrentPage={setCurrentPage} />
-            <Suspense fallback={<div className='flex items-center justify-center'>Loading...</div>}>
+            <Suspense fallback={
+                <div className=' flex items-center justify-center animate-spin h-20 w-full bg-g'>Loading...</div>
+                }>
                 {pages[currentPage]}
             </Suspense>
         </section>

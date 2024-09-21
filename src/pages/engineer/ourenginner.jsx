@@ -1,11 +1,6 @@
 import React, { useState, useMemo, useCallback } from 'react';
 import CardPerson from "./card";
-import p1 from '../../assets/p1.png';
-import p2 from '../../assets/p2.png';
-import p3 from '../../assets/p3.png';
-import p4 from '../../assets/p4.png';
-import p5 from '../../assets/p5.png';
-import p6 from '../../assets/p6.png';
+
 import { motion } from 'framer-motion';
 
 export default function OurEngineers() {
@@ -15,42 +10,42 @@ export default function OurEngineers() {
             phone: '123-456-7890',
             email: 'jhon@gmail.com',
             job: 'Software Engineer',
-            img: p1,
+            img: "https://res.cloudinary.com/dlzc4m2xu/image/upload/v1726936926/build-master/p6_e3flsd.png",
         },
         {
             name: 'William Smith',
             phone: '123-456-7890',
             job: 'Frontend Developer',
             email: 'smith@gmail.com',
-            img: p2,
+            img: "https://res.cloudinary.com/dlzc4m2xu/image/upload/v1726936917/build-master/p5_jxxpju.png"
         },
         {
             name: 'Jane Doe',
             phone: '987-654-3210',
             email: 'jane@gmail.com',
             job: 'Backend Developer',
-            img: p3,
+            img: "https://res.cloudinary.com/dlzc4m2xu/image/upload/v1726936910/build-master/p4_xljmos.png",
         },
         {
             name: 'Emily Johnson',
             phone: '555-123-4567',
             email: 'emily@gmail.com',
             job: 'Fullstack Developer',
-            img: p4,
+            img:"https://res.cloudinary.com/dlzc4m2xu/image/upload/v1726936902/build-master/p3_p0u3e7.png",
         },
         {
             name: 'Michael Brown',
             phone: '555-987-6543',
             email: 'michael@gmail.com',
             job: 'Software Engineer',
-            img: p5,
+            img: "https://res.cloudinary.com/dlzc4m2xu/image/upload/v1726936879/build-master/p2_jghhxo.png",
         },
         {
             name: 'Robert Wilson',
             phone: '555-123-4567',
             email: 'wilson@gmail.com',
             job: 'Frontend Developer',
-            img: p6,
+            img: "https://res.cloudinary.com/dlzc4m2xu/image/upload/v1726936864/build-master/p1_n575mc.png",
         }
     ] , []);
     const [currentPage, setCurrentPage] = useState(0);

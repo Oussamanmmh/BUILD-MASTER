@@ -13,7 +13,7 @@ export default function HomePage() {
     useEffect(() => {
         const timer = setTimeout(() => {
             setIsModalOpen(true);
-            window.scrollTo(0, 0);
+           
         }, 2000);
 
         return () => clearTimeout(timer); // Cleanup the timeout if the component unmounts
