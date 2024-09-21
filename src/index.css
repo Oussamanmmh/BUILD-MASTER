@@ -1,13 +1,114 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    @apply font-nunito text-textcolor -mr-48 md:mr-0  overflow-x-hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* .homepage {
+    @apply space-y-40 ;
+
+    @media (min-height: 800px) {
+        m;
+    }
+} */
+.navlist a{
+
+    @apply relative after:block  after:content-[''] after:w-0 after:border-b-2  hover:text-primary   after:border-primary after:absolute after:bottom-[-5px]   after:transition-all after:duration-300 after:ease-in-out;
+}
+.navlist a:hover::after {
+    animation: afteranimation 0.3s forwards;
+}
+.btncontact {
+    @apply hover:border-primary relative after:absolute overflow-hidden after:w-0 after:inset-0 after:transition-all after:ease-in-out after:duration-300  after:h-full hover:after:w-full after:bg-primary ;
+}
+.btncontact:hover > .btntxt {
+    @apply text-white z-50 relative;
+   
+}
+.btnlrn{
+    @apply  relative after:absolute overflow-hidden after:w-0 after:inset-0 after:transition-all after:ease-in-out after:duration-300  after:h-full hover:after:w-full after:bg-white border border-white hover:border-light;
+}
+.btnlrn:hover > .btntxt {
+    @apply text-black z-50 relative;
+}
+.containeroffer:hover > .circleoffer::after{
+    @apply transition-all duration-300 ;
+    animation: circleanimation 0.3s ease-in-out forwards;
+}
+.arrow {
+    transform: rotate(0deg);
+}
+
+.containeroffer:hover > .circleoffer{
+    animation: arrowanimation 0.3s forwards ;
+    animation-direction: alternate;
+}
+/* .containeroffer:not(:hover) > .circleoffer{
+    animation: arrowanimation 0.3s forwards ;
+} */
+.socialmedia div {
+    @apply rounded-full p-2 transition-all duration-200 ease-in-out
+}
+.socialmedia div:hover{
+    @apply bg-white cursor-pointer
+}
+.socialmedia div:hover > svg{
+    @apply fill-primary
+}
+.socialmedia .instagram:hover > svg .insta {
+    @apply fill-primary
+
+}
+.footer h1{
+    @apply text-2xl font-bold font-oswald
+}
+.footer li{
+    @apply text-light font-semibold
+}
+.footer .container div {
+    @apply flex flex-col justify-center 
+}
+.footer .container div ul {
+    @apply space-y-3 flex-grow mt-2
+}
+
+.footer ul li {
+    @apply relative after:block after:absolute after:h-[2px] after:rounded-2xl after:w-0 hover:after:w-full after:bg-primary after:bottom-[-3px]  after:transition-all after:duration-300 after:ease-in-out 
+}
+@keyframes arrowanimation {
+    0% {
+       transform: rotate(0deg);
+      
+
+    }
+    100% {
+        transform: rotate(45deg);       
+    }
+}
+
+@keyframes circleanimation {
+    0% {
+      opacity: 100;
+      
+
+    }
+    100% {
+     opacity: 0;
+    }
+    
+}
+@keyframes afteranimation {
+    0% {
+        width: 0;
+        transform: translateX(50%);
+    }
+    100% {
+        width: 100%;
+        transform: translateX(0);
+    }
+    
 }
